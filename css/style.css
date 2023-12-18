@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left:0;
+    animation: render 6s ease-in-out infinite;
+}
+@keyframes render{
+   0%{
+    top:0;
+    left:0;
+    background-color: red;
+   }
+   25%{
+    top: 0px;
+    left:300px;
+    background-color: blue;
+    border-radius: 50%;
+   }
+   50%{
+    top: 480px;;
+    left: 400px;;
+    background-color: green;
+    border-radius: 0%;
+   }
+   75%{
+    top: 480px;;
+    left:0;
+    background-color: red;
+    border-radius: 50%;
+   } 
+}
